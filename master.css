@@ -1,0 +1,186 @@
+body {
+  background: linear-gradient(-45deg, rgb(218,68,55), rgb(15,157,88), rgb(66,133,244), rgb(218,68,55));
+  background-size: 400% 400%;
+  animation: linear-bg 10s ease-in-out infinite;
+  height: 100vh;
+  font-family: Arial, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  user-select: none;
+}
+
+.me {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  color: white;
+  border: 1px solid white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  min-width: 80%;
+  transition: 0.5s;
+}
+
+header {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  header {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+header::before {
+  content: '';
+  width: 90%;
+  height: 1px;
+  background-color: #000000aa;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
+header span {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+header span img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  pointer-events: none;
+  animation: rotate 1s ease-in-out 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: scale(.9) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.inn {
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#about,#skills,#social {
+  opacity: 0;
+  transition: 0.5s;
+  transform: scale(.9);
+  margin: 20px 0;
+}
+
+.portfolio {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.portfolio h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.portfolio .content {
+  line-height: 1.7;
+}
+
+.portfolio .content ul li {
+  list-style: none;
+  margin-left: -30px;
+  margin-bottom: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio .content img {
+  width: 30px;
+  pointer-events: none;
+  margin-right: 5px;
+}
+
+.portfolio a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes linear-bg {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/*set container*/
+.inn {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*very small screen*/
+@media (min-width: 576px) {
+  .inn{
+    width: 566px;
+    margin: 0 auto;
+  }
+}
+
+/*small screen*/
+@media (min-width: 768px) {
+  .inn {
+    width: 758px;
+    margin: 0 auto;
+  }
+}
+
+/*medium screen*/
+@media (min-width: 992px) {
+  .inn {
+    width: 982px;
+    margin: 0 auto;
+  }
+}
+
+/*large screen*/
+@media (min-width: 1200px) {
+  .inn {
+    width: 1190px;
+    margin: 0 auto;
+  }
+}
+
+/*very large screen*/
+@media (min-width: 1400px) {
+  .inn {
+    width: 1390px;
+    margin: 0 auto;
+  }
+}

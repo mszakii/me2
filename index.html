@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="master.css" />
+  <title>Mohamed Zaky</title>
+  <meta name="discription" content="Mohamed Zaky's portfolio" />
+  <link rel="shortcut icon" href="asset/logo.png" type="image/x-icon" />
+  <!--open graph-->
+  <meta property="og:title" content="Mohamed Zaky">
+  <meta property="og:description" content="Mohamed Zaky's portfolio" />
+  <meta property="og:url" content="https://mohammed-zaky.github.io/me" />
+  <meta property="og:type" content="website">
+  <!--twitter-->
+  <meta property="twitter:title" content="Mohamed Zaky">
+  <meta property="twitter:description" content="Mohamed Zaky's portfolio" />
+  <meta property="twitter:image" content="https://mohammed-zaky.github.io/azkar/20210727_170954.png" />
+  <meta property="twitter:card" content="Mohamed Zaky">
+  <meta property="twitter:domain" content="mohammed-zaky.github.io" />
+  <meta property="twitter:url" content="https://mohammed-zaky.github.io/me">
+</head>
+<body>
+  <div class="me">Mohamed Zaky</div>
+  
+  <div class="inn">
+    <header>
+      <span><img src="asset/logo2.jpg" alt="logo"></span>
+      <span>Mohamed Zaky</span>
+    </header>
+    <div class="portfolio">
+      <div id="about">
+        <h2>About</h2>
+        <div class="content">
+          Hello, my name is Mohamed Zaky. I am a web developer. I was born in Egypt in 2006. I have a Twitter account. I like to teach beginners. I like to help all people.
+        </div>
+      </div>
+      <div id="skills">
+        <h2>Skills</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <img src="asset/html.png" alt="html">
+              <span>HTML5</span>
+            </li>
+            <li>
+              <img src="asset/css.png" alt="css">
+              <span>CSS3</span>
+            </li>
+            <li>
+              <img src="asset/js.svg" alt="js">
+              <span>JavaScript</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="social">
+        <h2>social</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <img src="asset/twitter.png" alt="twitter">
+              <a href="https://twitter.com/mohamed_zaky7">Twitter</a>
+            </li>
+            <li>
+              <img src="asset/github.png" alt="github">
+              <a href="https://github.com/mohammed-zaky">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <audio src="asset/open.mp3" ></audio>
+  
+<!--JavaScript-->
+<script>
+  let me = document.querySelector(".me");
+  let inn = document.querySelector(".inn");
+  let audio = document.querySelector("audio");
+  let about = document.querySelector("#about");
+  let skills = document.querySelector("#skills");
+  let social = document.querySelector("#social");
+  setTimeout(function() {
+    me.style.opacity = "0";
+  },2500);
+  
+  setTimeout(function() {
+    me.style.display = "none";
+    inn.style.display = "block";
+    inn.style.opacity = "1";
+    audio.play();
+  },3000);
+  
+  setTimeout(function() {
+    about.style.opacity = "1";
+    about.style.transform = "scale(1)";
+  },3400);
+  setTimeout(function() {
+    skills.style.opacity = "1";
+    skills.style.transform = "scale(1)";
+  },3600);
+  setTimeout(function() {
+    social.style.opacity = "1";
+    social.style.transform = "scale(1)";
+  },3800);
+</script>
+</body>
+</html>
