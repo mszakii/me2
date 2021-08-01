@@ -60,6 +60,12 @@ header span {
   font-size: 1.5rem;
 }
 
+header #print {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+}
+
 header span img {
   width: 40px;
   border-radius: 50%;
@@ -202,5 +208,27 @@ header span img {
   .inn {
     width: 1390px;
     margin: 0 auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {  
+    background: linear-gradient(-45deg, #5294e2, #4b5162);
+    background-size: 200% 200%;
+  }
+}
+
+@media print {
+  body::before {
+    content: "Mohamed Zaky's portfolio";
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  #social {
+    display: none;
+  }
+  #print {
+    display: none;
   }
 }
