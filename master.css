@@ -2,7 +2,7 @@ body {
   background: linear-gradient(-45deg, rgb(218,68,55), rgb(15,157,88), rgb(66,133,244), rgb(218,68,55));
   background-size: 400% 400%;
   animation: linear-bg 10s ease-in-out infinite;
-  height: 100vh;
+  min-height: 100vh;
   font-family: Arial, Sans-Serif;
   margin: 0;
   padding: 0;
@@ -115,7 +115,7 @@ header span img {
   align-items: center;
 }
 
-.portfolio .content img {
+.portfolio .content ul li img {
   width: 30px;
   pointer-events: none;
   margin-right: 5px;
@@ -125,6 +125,26 @@ header span img {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+}
+
+.portfolio .projects {
+  opacity: 0;
+  transform: scale(.9);
+}
+
+.portfolio .projects .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.portfolio .projects .content .pro {
+  border-radius: 5px;
+}
+
+.portfolio .projects .content img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 @keyframes linear-bg {
