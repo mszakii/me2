@@ -25,18 +25,25 @@
   <div class="me">Mohamed Zaky</div>
   
   <div class="inn">
+    
+    <!-- header -->
     <header>
-      <span><img src="asset/logo.png" alt="logo"></span>
+      <span><img src="asset/logo2.jpg" alt="logo"></span>
       <span>Mohamed Zaky</span>
     </header>
+    
     <div class="portfolio">
-      <div id="about">
+      
+      <!-- about section -->
+      <section id="about">
         <h2>About</h2>
         <div class="content">
           Hello, my name is Mohamed Zaky. I am a web developer. I was born in Egypt in 2006. I have a Twitter account. I like to teach beginners. I like to help all people.
         </div>
-      </div>
-      <div id="skills">
+      </section>
+      
+      <!-- skills section -->
+      <section id="skills">
         <h2>Skills</h2>
         <div class="content">
           <ul>
@@ -54,8 +61,10 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div id="social">
+      </section>
+      
+      <!-- social section -->
+      <section id="social">
         <h2>social</h2>
         <div class="content">
           <ul>
@@ -69,7 +78,20 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
+      
+      <!-- projects section -->
+      <section class="projects" id="projects">
+        <h2>projects</h2>
+        <div class="content">
+          <div class="pro">
+            <a href="https://mohammed-zaky.github.io/pomodoro" target="_blank">
+              <img src="asset/pomodoro.png" alt="pomodoro">
+            </a>
+          </div>
+        </div>
+      </section>
+      
     </div>
   </div>
   
@@ -83,6 +105,7 @@
   let about = document.querySelector("#about");
   let skills = document.querySelector("#skills");
   let social = document.querySelector("#social");
+  let projects = document.querySelector("#projects");
   setTimeout(function() {
     me.style.opacity = "0";
   },2500);
@@ -106,6 +129,10 @@
     social.style.opacity = "1";
     social.style.transform = "scale(1)";
   },3800);
+  setTimeout(function() {
+    projects.style.opacity = "1";
+    projects.style.transform = "scale(1)";
+  },4000);
 </script>
 </body>
 </html>
